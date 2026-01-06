@@ -1,17 +1,17 @@
 export const site = {
-  name: "Kassandra Marie",
-  title: "Kassandra Marie | Medical Biller & Coder + Healthcare VA (Manila)",
+  name: "Kassandra Hambali",
+  title: "Kassandra Hambali | Healthcare Professional & Virtual Assistant (Manila)",
   description:
-    "Medical billing & coding support + healthcare virtual assistance from Manila. Claims, eligibility, AR follow-up, denial management, and admin support—available for US time zones.",
-  location: "Manila, Philippines (PHT / UTC+8)",
-  email: "kassandra.marie@example.com",
-  phone: "+63 XXX XXX XXXX",
-  linkedin: "https://www.linkedin.com/in/kassandra-marie/",
-  bookingLink: "https://calendly.com/kassandra-marie",
+    "Dedicated healthcare professional with nursing background and customer service experience from Manila. Patient care, medical documentation, vital signs monitoring, and administrative support—available for US time zones.",
+  location: "Ortigas City, Philippines (PHT / UTC+8)",
+  email: "kass.hambali@gmail.com",
+  phone: "+63 968 533 2345",
+  linkedin: "https://www.linkedin.com/in/kassandra-hambali/",
+  bookingLink: "https://calendly.com/kass-hambali",
   resumeUrl: "/resume.pdf",
   availability: "Full-time | US Business Hours",
-  yearsExperience: "5+",
-  claimsPerWeek: "300+",
+  yearsExperience: "4+",
+  claimsPerWeek: "N/A",
   toolsCount: "10+",
   responseTime: "< 24 hours",
 };
@@ -28,73 +28,73 @@ export const navLinks = [
 
 export const services = [
   {
-    title: "Eligibility & Benefits Verification",
-    description: "Verify coverage, capture benefits, document limitations, and flag auth requirements before patient visits.",
+    title: "Nursing Assistance",
+    description: "Wound care for pressure ulcers and surgical sites, patient repositioning, vital signs monitoring, and documentation.",
     icon: "shield-check",
   },
   {
-    title: "Charge Entry & Claim Submission",
-    description: "Clean data entry, claim scrubbing, and timely submissions through clearinghouse and payer portals.",
+    title: "Patient Care & Safety",
+    description: "Compassionate bedside care, bedsore prevention, catheter preparation, and specimen collection support.",
     icon: "file-text",
   },
   {
-    title: "AR Follow-up & Denial Management",
-    description: "Work queues, research denials, resubmit/correct claims, and track outcomes with detailed notes.",
+    title: "Medical Documentation",
+    description: "Accurate patient charting, status updates to care teams, and interdisciplinary communication.",
     icon: "trending-up",
   },
   {
-    title: "Payment Posting (ERA/EOB)",
-    description: "Post payments accurately, adjust correctly, reconcile balances, and identify underpayments.",
+    title: "Customer Service",
+    description: "Professional phone support, product/service inquiries, order processing, and customer satisfaction.",
     icon: "credit-card",
   },
   {
-    title: "Appeals Support",
-    description: "Compile documentation, draft appeal templates, and follow up on status for non-clinical appeals.",
+    title: "Administrative Support",
+    description: "Scheduling, correspondence preparation, data entry, and general office administration tasks.",
     icon: "file-check",
   },
   {
     title: "Healthcare VA Support",
-    description: "Scheduling, inbox management, spreadsheets, call handling, task tracking, and detailed reports.",
+    description: "Remote administrative assistance, call handling, documentation, and task tracking for healthcare providers.",
     icon: "clipboard-list",
   },
 ];
 
 export const skillCategories = [
   {
-    category: "RCM Workflow",
+    category: "Patient Care",
     skills: [
-      "Eligibility Verification",
-      "Charge Entry",
-      "Claim Submission",
-      "AR Follow-up",
-      "Payment Posting",
-      "Denial Management",
-      "Patient Balance Support",
+      "Vital Signs Monitoring",
+      "Wound Care",
+      "Patient Repositioning",
+      "Catheter Care",
+      "Specimen Collection",
+      "Patient Safety",
+      "End of Life Care",
     ],
   },
   {
-    category: "Coding Knowledge",
-    skills: ["ICD-10-CM", "CPT Codes", "HCPCS", "Modifier Application", "Edit Resolution", "Documentation Review"],
+    category: "Clinical Skills",
+    skills: ["First Aid & CPR", "Basic Life Support", "Medication Administration", "Case Management", "Emergency Oxygen Administration", "Dementia Care"],
   },
   {
-    category: "EHR/PM Systems",
-    skills: ["Athena", "AdvancedMD", "Kareo", "eClinicalWorks", "PracticeFusion", "NextGen"],
+    category: "Documentation",
+    skills: ["Patient Charting", "Status Updates", "Medical Records", "Care Team Communication", "Progress Notes"],
   },
   {
-    category: "Clearinghouses & Portals",
-    skills: ["Availity", "Change Healthcare", "Office Ally", "Trizetto", "Medicare Portal", "Medicaid Portals"],
+    category: "Soft Skills",
+    skills: ["Strong Leadership", "Communication", "Interpersonal Skills", "Team Collaboration", "Independent Work", "Compassionate Care"],
   },
   {
     category: "Productivity Tools",
-    skills: ["Excel/Google Sheets", "Microsoft 365", "Google Workspace", "Slack", "Teams", "Zoom", "ClickUp", "Trello"],
+    skills: ["Microsoft Office", "Google Workspace", "Telemarketing Systems", "Customer Service Platforms"],
   },
 ];
 
 export const highlights = [
-  { value: "5+", label: "Years Experience", icon: "calendar" },
-  { value: "300+", label: "Claims/Week", icon: "file-stack" },
-  { value: "98%", label: "Accuracy Rate", icon: "target" },
-  { value: "10+", label: "Tools Proficient", icon: "wrench" },
+  { value: "4+", label: "Years Experience", icon: "calendar" },
+  { value: "BSN", label: "Nursing Degree", icon: "file-stack" },
+  { value: "NC II", label: "Certifications", icon: "target" },
+  { value: "BLS", label: "Certified", icon: "wrench" },
   { value: "< 24hr", label: "Response Time", icon: "clock" },
 ];
 
