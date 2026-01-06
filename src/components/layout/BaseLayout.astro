@@ -18,48 +18,6 @@ const { title = site.title, description = site.description } = Astro.props;
   </head>
   <body class="min-h-screen bg-grid-pattern">
     <slot />
-    
-    <footer class="border-t border-neutral-200 bg-white/50">
-      <div class="container-site py-8">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p class="text-sm text-neutral-500">
-            © {new Date().getFullYear()} {site.name}. All rights reserved.
-          </p>
-          <div class="flex items-center gap-6 text-sm">
-            <a href="/privacy" class="text-neutral-500 hover:text-primary-600 transition-colors">
-              Privacy Policy
-            </a>
-            <a href={site.linkedin} target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-primary-600 transition-colors">
-              LinkedIn
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Mobile CTA bar -->
-    <div class="fixed bottom-0 left-0 right-0 md:hidden bg-white border-t border-neutral-200 p-3 z-50">
-      <div class="flex gap-2">
-        <a 
-          href={site.bookingLink} 
-          target="_blank" 
-          rel="noopener"
-          class="flex-1 bg-primary-600 hover:bg-primary-700 text-white text-center py-3 px-4 rounded-xl font-semibold transition-colors"
-        >
-          Book a Call
-        </a>
-        <a 
-          href={site.resumeUrl} 
-          target="_blank" 
-          rel="noopener"
-          class="bg-neutral-100 hover:bg-neutral-200 text-neutral-800 py-3 px-4 rounded-xl font-medium transition-colors"
-        >
-          Resume
-        </a>
-      </div>
-    </div>
-    
-    <div class="h-20 md:hidden"></div>
   </body>
 </html>
 
