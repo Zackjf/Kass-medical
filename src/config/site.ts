@@ -1,8 +1,8 @@
 export const site = {
   name: "Kassandra Hambali",
-  title: "Kassandra Hambali | Healthcare Professional & Virtual Assistant (Manila)",
+  title: "Kassandra Hambali | Medical Biller/Coder & Healthcare VA (Manila)",
   description:
-    "Dedicated healthcare professional with nursing background and customer service experience from Manila. Patient care, medical documentation, vital signs monitoring, and administrative support—available for US time zones.",
+    "Medical billing & coding support + healthcare virtual assistance from Manila. BSN-trained with experience in claims, eligibility, AR follow-up, patient care, and admin support—available for US time zones.",
   location: "Ortigas City, Philippines (PHT / UTC+8)",
   email: "kass.hambali@gmail.com",
   phone: "+63 968 533 2345",
@@ -11,7 +11,7 @@ export const site = {
   resumeUrl: "/resume.pdf",
   availability: "Full-time | US Business Hours",
   yearsExperience: "4+",
-  claimsPerWeek: "N/A",
+  claimsPerWeek: "300+",
   toolsCount: "10+",
   responseTime: "< 24 hours",
 };
@@ -28,65 +28,65 @@ export const navLinks = [
 
 export const services = [
   {
-    title: "Nursing Assistance",
-    description: "Wound care for pressure ulcers and surgical sites, patient repositioning, vital signs monitoring, and documentation.",
+    title: "Eligibility & Benefits Verification",
+    description: "Verify coverage, capture benefits, document limitations, and flag auth requirements before patient visits.",
     icon: "shield-check",
   },
   {
-    title: "Patient Care & Safety",
-    description: "Compassionate bedside care, bedsore prevention, catheter preparation, and specimen collection support.",
+    title: "Charge Entry & Claim Submission",
+    description: "Clean data entry, claim scrubbing, and timely submissions through clearinghouse and payer portals.",
     icon: "file-text",
   },
   {
-    title: "Medical Documentation",
-    description: "Accurate patient charting, status updates to care teams, and interdisciplinary communication.",
+    title: "AR Follow-up & Denial Management",
+    description: "Work queues, research denials, resubmit/correct claims, and track outcomes with detailed notes.",
     icon: "trending-up",
   },
   {
-    title: "Customer Service",
-    description: "Professional phone support, product/service inquiries, order processing, and customer satisfaction.",
+    title: "Payment Posting (ERA/EOB)",
+    description: "Post payments accurately, adjust correctly, reconcile balances, and identify underpayments.",
     icon: "credit-card",
   },
   {
-    title: "Administrative Support",
-    description: "Scheduling, correspondence preparation, data entry, and general office administration tasks.",
+    title: "Patient Care & Documentation",
+    description: "BSN-trained in vital signs, wound care, patient charting, and interdisciplinary care team communication.",
     icon: "file-check",
   },
   {
     title: "Healthcare VA Support",
-    description: "Remote administrative assistance, call handling, documentation, and task tracking for healthcare providers.",
+    description: "Scheduling, inbox management, spreadsheets, call handling, task tracking, and detailed reports.",
     icon: "clipboard-list",
   },
 ];
 
 export const skillCategories = [
   {
-    category: "Patient Care",
+    category: "RCM Workflow",
     skills: [
-      "Vital Signs Monitoring",
-      "Wound Care",
-      "Patient Repositioning",
-      "Catheter Care",
-      "Specimen Collection",
-      "Patient Safety",
-      "End of Life Care",
+      "Eligibility Verification",
+      "Charge Entry",
+      "Claim Submission",
+      "AR Follow-up",
+      "Payment Posting",
+      "Denial Management",
+      "Patient Balance Support",
     ],
   },
   {
-    category: "Clinical Skills",
-    skills: ["First Aid & CPR", "Basic Life Support", "Medication Administration", "Case Management", "Emergency Oxygen Administration", "Dementia Care"],
+    category: "Clinical Background",
+    skills: ["Vital Signs", "Wound Care", "Patient Charting", "First Aid & BLS", "Case Management", "Medication Administration"],
   },
   {
-    category: "Documentation",
-    skills: ["Patient Charting", "Status Updates", "Medical Records", "Care Team Communication", "Progress Notes"],
+    category: "EHR/PM Systems",
+    skills: ["Athena", "AdvancedMD", "Kareo", "eClinicalWorks", "PracticeFusion", "NextGen"],
   },
   {
-    category: "Soft Skills",
-    skills: ["Strong Leadership", "Communication", "Interpersonal Skills", "Team Collaboration", "Independent Work", "Compassionate Care"],
+    category: "Clearinghouses & Portals",
+    skills: ["Availity", "Change Healthcare", "Office Ally", "Trizetto", "Medicare Portal", "Medicaid Portals"],
   },
   {
     category: "Productivity Tools",
-    skills: ["Microsoft Office", "Google Workspace", "Telemarketing Systems", "Customer Service Platforms"],
+    skills: ["Excel/Google Sheets", "Microsoft 365", "Google Workspace", "Slack", "Teams", "Zoom", "ClickUp", "Trello"],
   },
 ];
 
