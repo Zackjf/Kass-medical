@@ -5,4 +5,69 @@ import Nav from "../components/Nav.astro";
 import Hero from "../components/sections/Hero.astro";
 import Highlights from "../components/sections/Highlights.astro";
 import Services from "../components/sections/Services.astro";
-import SkillsTo
+import SkillsTools from "../components/sections/SkillsTools.astro";
+import ExperienceList from "../components/sections/ExperienceList.astro";
+import CaseSnapshots from "../components/sections/CaseSnapshots.astro";
+import Certifications from "../components/sections/Certifications.astro";
+import FAQ from "../components/sections/FAQ.astro";
+import Contact from "../components/sections/Contact.astro";
+---
+
+<BaseLayout>
+  <Nav />
+  <main>
+    <Hero />
+    <Highlights />
+    <Services />
+    <SkillsTools />
+    <ExperienceList />
+    <CaseSnapshots />
+    <Certifications />
+    <FAQ />
+    <Contact />
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-900 text-neutral-400 py-12">
+    <div class="container-site">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-center md:text-left">
+          <p class="text-sm">
+            &copy; {new Date().getFullYear()} Kassandra Hambali. All rights reserved.
+          </p>
+          <p class="text-xs mt-1 text-neutral-500">
+            Based in Ortigas City, Philippines • Available for US time zones
+          </p>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="/privacy" class="text-sm hover:text-white transition-colors">
+            Privacy Policy
+          </a>
+          <a href="#top" class="text-sm hover:text-white transition-colors">
+            Back to Top ↑
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile CTA Bar -->
+  <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-neutral-200 p-4 md:hidden z-50 shadow-lg">
+    <div class="flex gap-3">
+      <a
+        href="https://calendly.com/kass-hambali"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex-1 bg-primary-600 text-white text-center py-3 px-4 rounded-lg font-semibold text-sm hover:bg-primary-700 transition-colors"
+      >
+        Book a Call
+      </a>
+      <a
+        href="mailto:kass.hambali@gmail.com"
+        class="flex-1 bg-neutral-100 text-neutral-800 text-center py-3 px-4 rounded-lg font-semibold text-sm hover:bg-neutral-200 transition-colors"
+      >
+        Email Me
+      </a>
+    </div>
+  </div>
+</BaseLayout>
