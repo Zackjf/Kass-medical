@@ -1,0 +1,78 @@
+---
+import { site } from "../../config/site";
+import Button from "../ui/Button.astro";
+---
+
+<section id="top" class="relative pt-24 pb-16 md:pt-32 md:pb-24 hero-gradient overflow-hidden">
+  <!-- Decorative elements -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute top-20 left-10 w-72 h-72 bg-primary-400/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 w-96 h-96 bg-accent-400/10 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="container-site relative z-10">
+    <div class="max-w-4xl">
+      <!-- Location badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm border border-neutral-200 rounded-full text-sm text-neutral-600 mb-6 animate-fade-in">
+        <span class="w-2 h-2 bg-accent-500 rounded-full animate-pulse"></span>
+        {site.location}
+      </div>
+
+      <!-- Main headline -->
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-neutral-900 leading-tight mb-6 animate-fade-in-up" style="animation-delay: 0.1s;">
+        Medical Biller & Coder
+        <span class="gradient-text block mt-2">+ Healthcare Virtual Assistant</span>
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="text-lg md:text-xl text-neutral-600 max-w-2xl mb-8 animate-fade-in-up" style="animation-delay: 0.2s;">
+        I support US clinics with <strong class="text-neutral-800">eligibility, claims, AR follow-up, denials, payment posting</strong>, and organized admin help. Available for US time zones.
+      </p>
+
+      <!-- Trust chips -->
+      <div class="flex flex-wrap gap-3 mb-10 animate-stagger">
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-neutral-200 rounded-full text-sm font-medium text-neutral-700 shadow-sm">
+          <svg class="w-4 h-4 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          US time zones OK
+        </span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-neutral-200 rounded-full text-sm font-medium text-neutral-700 shadow-sm">
+          <svg class="w-4 h-4 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+          HIPAA-aware workflows
+        </span>
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-neutral-200 rounded-full text-sm font-medium text-neutral-700 shadow-sm">
+          <svg class="w-4 h-4 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+          </svg>
+          Detail-oriented documentation
+        </span>
+      </div>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-wrap gap-4 animate-fade-in-up" style="animation-delay: 0.4s;">
+        <Button href={site.bookingLink} variant="primary" size="lg" external>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          Book a Call
+        </Button>
+        <Button href={`mailto:${site.email}`} variant="secondary" size="lg">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          Email Me
+        </Button>
+        <Button href={site.resumeUrl} variant="ghost" size="lg" external>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          Download Resume
+        </Button>
+      </div>
+    </div>
+  </div>
+</section>
+

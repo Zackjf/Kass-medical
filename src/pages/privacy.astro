@@ -1,0 +1,99 @@
+---
+import BaseLayout from "../components/layout/BaseLayout.astro";
+import Nav from "../components/Nav.astro";
+import { site } from "../config/site";
+---
+
+<BaseLayout 
+  title={`Privacy Policy | ${site.name}`}
+  description="Privacy policy for the portfolio website of a medical biller and healthcare virtual assistant."
+>
+  <Nav />
+  <main class="pt-24 pb-16">
+    <div class="container-site max-w-3xl">
+      <h1 class="text-4xl font-display font-bold text-neutral-900 mb-8">Privacy Policy</h1>
+      
+      <div class="prose prose-neutral max-w-none space-y-6">
+        <p class="text-lg text-neutral-600">
+          Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+        </p>
+
+        <section class="space-y-4">
+          <h2 class="text-2xl font-display font-semibold text-neutral-900">Purpose</h2>
+          <p class="text-neutral-600 leading-relaxed">
+            This website is a professional portfolio for {site.name}, a medical biller and healthcare virtual assistant. 
+            The site is intended for professional contact only and is not designed to collect, store, or process any 
+            protected health information (PHI) or sensitive medical data.
+          </p>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-2xl font-display font-semibold text-neutral-900">Information Collection</h2>
+          <p class="text-neutral-600 leading-relaxed">
+            When you use the contact form on this website, I collect only:
+          </p>
+          <ul class="list-disc list-inside text-neutral-600 space-y-2">
+            <li>Your name</li>
+            <li>Your email address</li>
+            <li>Your message content</li>
+          </ul>
+          <p class="text-neutral-600 leading-relaxed">
+            This information is used solely to respond to your inquiry and will not be shared with third parties 
+            except as necessary to process the form submission (via Formspree).
+          </p>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-2xl font-display font-semibold text-neutral-900">Important Notice</h2>
+          <div class="bg-amber-50 border border-amber-200 rounded-xl p-6">
+            <p class="text-amber-800 font-medium">
+              ⚠️ Please do not submit any sensitive medical information, protected health information (PHI), 
+              or patient data through the contact form or any other means on this website.
+            </p>
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-2xl font-display font-semibold text-neutral-900">Cookies & Analytics</h2>
+          <p class="text-neutral-600 leading-relaxed">
+            This website may use basic analytics to understand visitor traffic. No personally identifiable 
+            information is collected through analytics, and no marketing cookies are used.
+          </p>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-2xl font-display font-semibold text-neutral-900">Your Rights</h2>
+          <p class="text-neutral-600 leading-relaxed">
+            You have the right to request access to, correction of, or deletion of any personal information 
+            I may have collected. To exercise these rights, please contact me at{' '}
+            <a href={`mailto:${site.email}`} class="text-primary-600 hover:underline">{site.email}</a>.
+          </p>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-2xl font-display font-semibold text-neutral-900">Contact</h2>
+          <p class="text-neutral-600 leading-relaxed">
+            If you have any questions about this privacy policy, please contact:
+          </p>
+          <p class="text-neutral-600">
+            <strong>{site.name}</strong><br />
+            Email: <a href={`mailto:${site.email}`} class="text-primary-600 hover:underline">{site.email}</a>
+          </p>
+        </section>
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-neutral-200">
+        <a 
+          href="/" 
+          class="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-medium transition-colors"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          Back to Home
+        </a>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+

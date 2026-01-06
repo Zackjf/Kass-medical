@@ -1,0 +1,64 @@
+---
+import Section from "../ui/Section.astro";
+import Tag from "../ui/Tag.astro";
+import { skillCategories } from "../../config/site";
+---
+
+<Section 
+  id="skills" 
+  title="Skills & Tools" 
+  subtitle="Proficient in end-to-end RCM workflows and industry-standard software."
+  class="bg-white"
+>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {skillCategories.map((category, catIndex) => (
+      <div 
+        class="animate-fade-in-up" 
+        style={`animation-delay: ${0.1 + catIndex * 0.1}s`}
+      >
+        <h3 class="font-display font-semibold text-neutral-900 mb-4 flex items-center gap-2">
+          <span class="w-1.5 h-1.5 rounded-full bg-primary-500"></span>
+          {category.category}
+        </h3>
+        <div class="flex flex-wrap gap-2">
+          {category.skills.map((skill) => (
+            <Tag variant={catIndex % 2 === 0 ? "primary" : "secondary"} size="md">
+              {skill}
+            </Tag>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Work style note -->
+  <div class="mt-12 p-6 bg-gradient-to-r from-primary-50 to-accent-50 rounded-2xl border border-primary-100">
+    <h4 class="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
+      <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+      Work Style
+    </h4>
+    <ul class="grid sm:grid-cols-3 gap-3 text-sm text-neutral-700">
+      <li class="flex items-start gap-2">
+        <svg class="w-4 h-4 text-accent-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+        Clear notes + daily updates
+      </li>
+      <li class="flex items-start gap-2">
+        <svg class="w-4 h-4 text-accent-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+        Organized worklists & trackers
+      </li>
+      <li class="flex items-start gap-2">
+        <svg class="w-4 h-4 text-accent-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+        SOP-first repeatable processes
+      </li>
+    </ul>
+  </div>
+</Section>
+
